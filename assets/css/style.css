@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body {
+	background-color: #f1f1f1;
+	color: #0f141e;
+
+	font-size: 16px;
+	font-weight: normal;
+	font-family: 'Roboto', sans-serif;
+
+	/*font: normal 16px 'Roboto', sans-serif;*/
+
+
+	/*font-family: 'lucida sans', 'Lucida Sans Regular', */
+	/*'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+
+
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+/*при наведении на ссылку появляется линия, 
+			за это отвечает hover*/
+a:hover {
+	text-decoration: underline;
+}
+
+/*При нажимании на ссылку производится какое-то действие,
+				за это отвечает active*/
+
+a:active {
+	color: blue;
+}
+
+.foto {
+	width: 250px;
+	border-radius: 20px;
+	box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+
+
+/*who {
+	margin: 0 0 0 240px;
+}*/
+
+.who{
+	display: flex;
+	margin-left: 20px;
+}
+
+.who h1 {
+	margin-left: 20px;
+}
+
+.who1 {
+	margin-top: 80px;
+}
+
+
+.who {
+	margin-bottom: 20px;
+}
+
+.card h2 {
+	margin-bottom: 10px ;
+}
+
+.who h3 {
+	color: #86898f;
+	margin:0;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	/*word-spacing: 42px;*/
+}
+
+@media (max-width:700px) {
+	.who {
+		text-align: center;
+		display: block;
+	}
+}
+
+/*Box model*/
+.container {
+	max-width: 750px;/*750px*/
+	margin: auto;
+}
+
+/*.music {*/
+	/*background: darkgrey;*/
+	/*padding: 15px; со всех сторон*/
+	/*padding: 15px 40px; 1 это вверх и низ, 2 это лево право*/
+	/*1 это вверх 2 это право 3 низ 4 лево*/
+	/*такой же принцип у margin и border*/
+	/*padding: 15px 20px 25px 30px;   */
+	/*margin: 20px;*/
+	
+	/*border: 5px solid black;*/
+	/*border-bottom-style: double;*/
+	/*border-top-width: 15px;*/
+	/*border-left/right - можно менят цвет, ширину и т.п.*/
+/*}*/
+
+/*Знак > div означает что он будет использовать только div одного уровня*/
+/*.boxmodel > div {
+	width: 25%;
+	height: 200px;
+	background: black;
+	float: left;
+	border: 4px solid red;
+	box-sizing: border-box;
+}*/
+
+.bg-yellow {
+background: #cff448
+;
+}
+
+.bg-blue {
+background: #4593c4;
+}
+
+.bg-lightcoral {
+	background: lightcoral;
+}
+
+.bg-violate {
+	background: #bf60d2;
+}
+
+.bg-orange {
+	background: #e1c123;
+}
+.card {
+	padding: 15px 20px;
+	margin-bottom: 25px;
+	border-radius: 20px;
+}
+
+.olol {
+	padding: 0 30px;
+}
+
+.olol li {
+	margin-bottom: 10px;
+	color: #black;
+	/*border-bottom: 1px solid grey;*/
+}
+
+.tabletoid {
+	width: 100%;
+}
+
+.tabletoid td {
+	padding-bottom: 10px;
+}
+
+
+/*Есть ещё nth-child(odd,even) - каждая нечётная, четная*/
+.tabletoid td:nth-child(2) {
+	color: white;
+	/*font-weight: bold;*/
+	font-style: italic;
+}
+
+.link-list {
+	/*list-style: none;*/
+	padding: 0;
+}
+
+.link-list li {
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	margin-left: 20px;
+}
+
+.forma h2 {
+	text-align: center;
+}
+
+.forma1 label {
+	display: block;
+	font-size: 14px;
+}
+
+.forma1 input,
+.forma1 textarea {
+	width: 100%;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 1px solid black;
+	color: black;
+	padding: 15px 0 10px 0;
+	outline: none; /*при наводке убирается обводка*/
+	font-family: inherit; /*должен наследовать шрифт*/
+	background: transparent;
+} 
+
+.row {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.row > .forma1 {
+	width:50%;
+	margin-right: 20px;
+}
+
+.knop {
+	background: black;
+	color: white;
+	padding: 15px 20px;
+	border: none;
+	font-family: inherit;
+	cursor: pointer;
+}
+
+.knop:hover {
+	opacity: 0.7;
+}
+
+/*.position {
+	position: relative;
+	border: 4px solid black;
+	margin-top: 40px;
+	padding: 20px;
+	height: 300px;
+}*/
+
+.box {
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	bottom: 50px;
+	right: 50px;
+	border-radius: 50%;
+	background: lightcoral;
+}
+
+.members ul {
+	list-style-type: square;
+}
+
+.members {
+	padding: 0 30px ;
+}
+.members li {
+	margin-bottom: 10px;
+}
+
+.textaa {
+	text-align: center;
+	/*padding: 30px;*/
+}
+
+.textaa p {
+	margin-bottom: 10px;
+}
+
+.textaa h2 {
+	margin-bottom: 40px;
+}
+
+.shurshat p {
+	text-transform: none; 
+}
